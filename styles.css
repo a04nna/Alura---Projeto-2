@@ -1,0 +1,16 @@
+:root {
+    --branco-principal:#ffffff;
+    --cinza-secundario: #929292;
+    --botão-azul:#5e8aad;
+    --cor-de-fundo: #000000;
+}
+
+body{
+    background-color: var(--cor-de-fundo);    
+    color: var(--branco-principal);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
