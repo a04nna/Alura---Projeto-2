@@ -1,13 +1,17 @@
 :root {
-    --branco-principal:#ffffff;
+    --branco-principal: #FFFFFF;
     --cinza-secundario: #929292;
-    --botão-azul:#5e8aad;
+    --botao-azul: #5e8aad;
     --cor-de-fundo: #000000;
+    --fonte-principal: 'Jersey 25';
 }
 
-body{
-    background-color: var(--cor-de-fundo);    
+body {
+    background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 * {
@@ -16,11 +20,47 @@ body{
 }
 
 .principal {
-    background-image:url(imagem/Background.png) ;
+    background-image: url("imagem/Background.png");
     background-repeat: no-repeat;
-    background-size: container;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 
-.container{
+.container {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container_botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
+}
+
+.container_aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container_titulo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container_imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container_caixa {
+    margin: 0 6em;
 }
